@@ -1,0 +1,20 @@
+logging:
+  config: classpath:log4j2.yaml
+
+spring:
+  servlet:
+    multipart:
+      resolve-lazily: true
+
+springdoc:
+  enable-hateoas: false
+  swagger-ui:
+    operationsSorter: method
+  # show-actuator: true
+  # packages-to-scan: org.idiologue
+  # pre-loading-enabled: true
+
+binary:
+  storage:
+    strategy: block
+    block.location: /tmp
